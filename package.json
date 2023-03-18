@@ -14,9 +14,9 @@
   },
   "scripts": {
     "build": "tsc --build",
-    "build:watch": "yarn build --watch",
+    "build:watch": "pnpm build --watch",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "pnpm test --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
