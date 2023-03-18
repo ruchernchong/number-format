@@ -1,1 +1,1 @@
-export { default, toReadableSize } from "src/toReadableSize";
+export * from "./nFormatter";
