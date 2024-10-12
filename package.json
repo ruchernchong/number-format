@@ -1,19 +1,19 @@
 {
-  "name": "@ruchernchong/n-formatter",
+  "name": "@ruchernchong/number-format",
   "version": "1.0.1",
   "description": "Package to convert huge numbers to their respective named values in thousands separator",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "author": "Ru Chern Chong <hello@ruchern.xyz>",
+  "author": "Ru Chern Chong <hello@ruchern.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruchernchong/n-formatter.git"
+    "url": "https://github.com/ruchernchong/number-format.git"
   },
   "scripts": {
-    "build": "tsc --build",
+    "build": "rm -rf dist && tsc --build",
     "build:watch": "pnpm build --watch",
     "test": "jest",
     "test:watch": "pnpm test --watch"
