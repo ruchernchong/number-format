@@ -1,4 +1,4 @@
-import numberFormat from "./numberFormat";
+import numberFormat from "../src/numberFormat";
 
 describe("nFormatter", () => {
   it.each([
