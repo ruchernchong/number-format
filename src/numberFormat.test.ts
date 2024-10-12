@@ -10,7 +10,7 @@ describe("nFormatter", () => {
     "should return $value as $formattedValue correctly",
     ({ value, formattedValue }) => {
       expect(numberFormat(value)).toEqual(formattedValue);
-    }
+    },
   );
 
   it.each([100, 10, 1])(
@@ -19,6 +19,6 @@ describe("nFormatter", () => {
       expect(numberFormat(100)).toEqual("100");
       expect(numberFormat(10)).toEqual("10");
       expect(numberFormat(1)).toEqual("1");
-    }
+    },
   );
 });

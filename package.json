@@ -2,7 +2,10 @@
   "name": "@ruchernchong/number-format",
   "version": "2.0.0",
   "description": "Package to convert huge numbers to their respective named values in thousands separator",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/numberFormat.js",
+  "module": "dist/numberFormat.js",
+  "types": "dist/numberFormat.d.ts",
   "files": [
     "dist"
   ],
@@ -12,8 +15,13 @@
     "type": "git",
     "url": "https://github.com/ruchernchong/number-format.git"
   },
+  "keywords": [
+    "number",
+    "format",
+    "utility"
+  ],
   "scripts": {
-    "build": "rm -rf dist && tsc --build",
+    "build": "rm -rf dist && tsc",
     "build:watch": "pnpm build --watch",
     "test": "jest",
     "test:watch": "pnpm test --watch"
