@@ -4,7 +4,9 @@ import numberFormat from "../src/numberFormat";
 describe("numberFormat", () => {
   it.each([
     { value: 1000, formattedValue: "1k" },
+    { value: 10000, formattedValue: "10k" },
     { value: 1000000, formattedValue: "1M" },
+    { value: 10000000, formattedValue: "10M" },
     { value: 1000000000, formattedValue: "1B" },
     { value: 1000000000000, formattedValue: "1T" },
   ])(
