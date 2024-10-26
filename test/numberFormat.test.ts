@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import numberFormat from "../src/numberFormat";
 
-describe("nFormatter", () => {
+describe("numberFormat", () => {
   it.each([
     { value: 1000, formattedValue: "1k" },
     { value: 1000000, formattedValue: "1M" },
