@@ -23,14 +23,20 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "build:watch": "pnpm build --watch",
-    "test": "vitest",
-    "test:watch": "pnpm test --watch"
+    "test": "vitest"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.18.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
     "prettier": "^3.3.1",
+    "semantic-release": "^24.2.0",
     "typescript": "^5.2.2",
     "vitest": "^2.1.2"
   }
