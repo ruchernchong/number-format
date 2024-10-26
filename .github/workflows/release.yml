@@ -21,10 +21,6 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Configure Git User
-        run: |
-          git config --global user.name "Ru Chern Chong"
-          git config --global user.email "hello@ruchern.dev"
       - uses: pnpm/action-setup@v4
         with:
           version: latest
@@ -38,5 +34,10 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Git environment variables
+          GIT_AUTHOR_NAME: Ru Chern Chong
+          GIT_AUTHOR_EMAIL: hello@ruchern.dev
+          GIT_COMMITTER_NAME: Ru Chern Chong
+          GIT_COMMITTER_EMAIL: hello@ruchern.dev
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm dlx semantic-release
