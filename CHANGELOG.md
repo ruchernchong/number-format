@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/ruchernchong/number-format/compare/v2.3.0...v2.3.1) (2024-10-26)
+
+
+### Bug Fixes
+
+* update workflow git author and committer info ([a145b88](https://github.com/ruchernchong/number-format/commit/a145b88cc3c6fc14a5bdc2cd3e56d83ba928989b))
+
 # [2.3.0](https://github.com/ruchernchong/number-format/compare/v2.2.0...v2.3.0) (2024-10-26)
 
 
