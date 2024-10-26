@@ -25,13 +25,17 @@ describe("numberFormat", () => {
     },
   );
 
-  it("maintains two decimal places when needed", () => {
+  it("should maintain two decimal places when needed", () => {
     expect(numberFormat(1234)).toBe("1.23k");
     expect(numberFormat(12345)).toBe("12.35k");
     expect(numberFormat(123456)).toBe("123.46k");
   });
 
-  it("handles edge cases correctly", () => {
+  it("should format negative numbers below minimum threshold with comma separators", () => {
+    expect(numberFormat(-999)).toBe("-999");
+  });
+
+  it("should handle edge cases correctly", () => {
     expect(numberFormat(0)).toBe("0");
     expect(numberFormat(-1000)).toBe("-1k");
     expect(() => numberFormat(NaN)).toThrow();
