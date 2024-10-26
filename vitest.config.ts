@@ -6,8 +6,7 @@ export default defineConfig({
     environment: "node",
     include: ["**/*.test.ts"],
     coverage: {
-      provider: "v8",
-      reporter: ["text", "json", "html", "lcov"],
+      reporter: ["text", "json", "lcov"],
       branches: 80,
       functions: 80,
       lines: 80,
