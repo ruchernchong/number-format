@@ -1,3 +1,10 @@
+## [2.3.3](https://github.com/ruchernchong/number-format/compare/v2.3.2...v2.3.3) (2024-10-26)
+
+
+### Bug Fixes
+
+* normalise repository.url in package.json ([46c31af](https://github.com/ruchernchong/number-format/commit/46c31afb3842e2d815264e0f66f6a4ca82b5572b))
+
 ## [2.3.2](https://github.com/ruchernchong/number-format/compare/v2.3.1...v2.3.2) (2024-10-26)
 
 
