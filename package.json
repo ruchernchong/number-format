@@ -22,8 +22,7 @@
     "build:watch": "pnpm build --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "vitest run",
-    "test:watch": "vitest --watch"
+    "test": "vitest"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
