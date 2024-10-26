@@ -1,3 +1,10 @@
+## [2.3.2](https://github.com/ruchernchong/number-format/compare/v2.3.1...v2.3.2) (2024-10-26)
+
+
+### Reverts
+
+* Revert "fix: update workflow git author and committer info" ([f560173](https://github.com/ruchernchong/number-format/commit/f560173d95d4a25e7bc270b23928b4ab1923e9d8))
+
 ## [2.3.1](https://github.com/ruchernchong/number-format/compare/v2.3.0...v2.3.1) (2024-10-26)
 
 
