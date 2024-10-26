@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/ruchernchong/number-format/compare/v2.2.0...v2.3.0) (2024-10-26)
+
+
+### Features
+
+* add error handling ([09d9c2e](https://github.com/ruchernchong/number-format/commit/09d9c2e6a33e1472b92b64c97560ff363626f952))
+
 # [2.2.0](https://github.com/ruchernchong/number-format/compare/v2.1.0...v2.2.0) (2024-10-26)
 
 ### Bug Fixes
