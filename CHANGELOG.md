@@ -1,3 +1,10 @@
+## [2.3.4](https://github.com/ruchernchong/number-format/compare/v2.3.3...v2.3.4) (2024-11-20)
+
+
+### Bug Fixes
+
+* npm package not publishing dist folder ([844db44](https://github.com/ruchernchong/number-format/commit/844db4421b8ff6ecc76814c7a951c781bba6093d))
+
 ## [2.3.3](https://github.com/ruchernchong/number-format/compare/v2.3.2...v2.3.3) (2024-10-26)
 
 
