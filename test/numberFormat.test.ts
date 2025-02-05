@@ -38,6 +38,6 @@ describe("numberFormat", () => {
   it("should handle edge cases correctly", () => {
     expect(numberFormat(0)).toBe("0");
     expect(numberFormat(-1000)).toBe("-1k");
-    expect(() => numberFormat(NaN)).toThrow();
+    expect(() => numberFormat(Number.NaN)).toThrow();
   });
 });

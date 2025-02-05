@@ -1,4 +1,4 @@
-export const numberFormat = (number: number, min: number = 1_000): string => {
+export const numberFormat = (number: number, min = 1_000): string => {
   if (!Number.isFinite(number)) {
     throw new Error("Input must be a valid number");
   }
