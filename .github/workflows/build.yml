@@ -2,9 +2,6 @@ name: Build
 permissions:
   contents: read
 
-permissions:
-  contents: read
-
 on: [ push ]
 
 jobs:
