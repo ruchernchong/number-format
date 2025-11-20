@@ -1,42 +1,46 @@
 name: Build
+
 permissions:
   contents: read
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
-  test:
+  checks:
+    name: ${{ matrix.check }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        check: [test, lint, build]
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
           version: latest
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           cache: 'pnpm'
+
       - name: Install dependencies
         run: pnpm install
-      - name: Generate coverage report
-        run: pnpm test:coverage
-      - uses: codecov/codecov-action@v4
+
+      - name: Run ${{ matrix.check }}
+        run: pnpm ${{ matrix.check == 'test' && 'test:coverage' || matrix.check }}
+
+      - name: Upload coverage to Codecov
+        if: matrix.check == 'test'
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-
-  build:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: latest
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-          cache: 'pnpm'
-      - name: Build
-        run: pnpm build
