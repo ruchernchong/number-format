@@ -1,3 +1,10 @@
+## [2.3.5](https://github.com/ruchernchong/number-format/compare/v2.3.4...v2.3.5) (2025-11-20)
+
+
+### Bug Fixes
+
+* enable npm provenance for trusted publishing ([d7ef5f9](https://github.com/ruchernchong/number-format/commit/d7ef5f9dd3e714758852eb0e4b73726276d5acd3))
+
 ## [2.3.4](https://github.com/ruchernchong/number-format/compare/v2.3.3...v2.3.4) (2024-11-20)
 
 
