@@ -1,0 +1,8 @@
+packages:
+  - .
+
+allowBuilds:
+  "@biomejs/biome": false
+  esbuild: false
+
+savePrefix: ""
