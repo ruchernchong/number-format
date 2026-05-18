@@ -6,20 +6,14 @@
   "main": "dist/numberFormat.js",
   "module": "dist/numberFormat.js",
   "types": "dist/numberFormat.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "author": "Ru Chern Chong <hello@ruchern.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ruchernchong/number-format.git"
   },
-  "keywords": [
-    "number",
-    "format",
-    "utility"
-  ],
+  "keywords": ["number", "format", "utility"],
   "scripts": {
     "build": "rm -rf dist && tsc",
     "build:watch": "pnpm build --watch",
